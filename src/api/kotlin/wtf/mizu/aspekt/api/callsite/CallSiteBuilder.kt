@@ -9,9 +9,8 @@ import kotlin.reflect.KProperty
 typealias DeclarationLike = Any
 
 @Suppress("UNCHECKED_CAST")
-fun <T: Declaration> DeclarationLike.toActual(): T =
+fun <T : Declaration> DeclarationLike.toActual(): T =
     this as T
-
 
 /**
  * @author xtrm

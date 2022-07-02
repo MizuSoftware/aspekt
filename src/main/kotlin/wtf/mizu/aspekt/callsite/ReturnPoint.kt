@@ -1,4 +1,3 @@
 package wtf.mizu.aspekt.callsite
 
-class ReturnPoint {
-}
+class ReturnPoint

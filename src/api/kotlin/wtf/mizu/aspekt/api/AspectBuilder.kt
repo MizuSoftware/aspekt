@@ -6,6 +6,4 @@ package wtf.mizu.aspekt.api
  * @author xtrm
  * @since 0.1.0
  */
-interface AspectBuilder {
-
-}
+interface AspectBuilder
