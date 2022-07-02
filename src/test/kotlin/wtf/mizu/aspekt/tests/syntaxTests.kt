@@ -4,10 +4,9 @@ import wtf.mizu.aspekt.api.matcher.withName
 import wtf.mizu.aspekt.dsl.aspect
 import wtf.mizu.aspekt.dsl.injectAt
 import wtf.mizu.aspekt.dsl.site
-import kotlin.test.Test
 
 internal class SyntaxTests {
-    @Test
+//    @Test
     fun `aspect with no parameters`() {
         val aspect = aspect {
             val test by methods
@@ -22,5 +21,6 @@ internal class SyntaxTests {
         }
 
         aspect injectAt callSite
+
     }
 }
