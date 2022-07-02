@@ -1,4 +1,4 @@
-private const val kotlinVersion = "1.6.20"
+private const val kotlinVersion = "1.7.0"
 
 object Plugins {
     const val KOTLIN = kotlinVersion
@@ -6,18 +6,26 @@ object Plugins {
     const val BLOSSOM = "1.3.0"
     const val SHADOW = "7.1.2"
     const val KTLINT = "10.2.1"
-    const val DOKKA = "1.6.20"
+    const val DOKKA = "1.6.21"
     const val NEXUS_PUBLISH = "1.0.0"
 }
 
 object Dependencies {
     const val KOTLIN = kotlinVersion
+    const val ASM = "9.3"
+    const val KOFFEE = "8.0.2"
 
-    val kotlinModules = arrayOf("stdlib")
+    val kotlinModules: Array<String> =
+        arrayOf(
+            "stdlib",
+            "reflect",
+        )
 }
 
 object Repositories {
-    val mavenUrls = arrayOf(
-        "https://jitpack.io/",
-    )
+    val mavenUrls: Array<String> =
+        arrayOf(
+            "https://maven.hackery.site", // Koffee repository
+            "https://jitpack.io/",
+        )
 }

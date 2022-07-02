@@ -1,6 +1,3 @@
-@file:Suppress("UNUSED_VARIABLE")
-
-import plugins.ShadowJar
 import java.net.URL
 import java.time.OffsetDateTime
 import java.time.format.DateTimeFormatter
@@ -13,12 +10,6 @@ plugins {
 
         // Git Repo Information
         id("org.ajoberstar.grgit") version GRGIT
-
-        // Token Replacement
-        id("net.kyori.blossom") version BLOSSOM
-
-        // Dependency Shading
-        id("com.github.johnrengelman.shadow") version SHADOW
 
         // Code Quality
         id("org.jlleitschuh.gradle.ktlint") version KTLINT
@@ -42,21 +33,6 @@ val additionalSourceSets: Array<String> = arrayOf(
     "api"
 )
 
-// Handle configurations lower down
-configurations()
-
-// Project Dependencies
-dependencies {
-    val include by configurations
-
-    with(Dependencies) {
-        kotlinModules.forEach {
-            implementation("org.jetbrains.kotlin", "kotlin-$it", KOTLIN)
-        }
-        testImplementation("org.jetbrains.kotlin", "kotlin-test", KOTLIN)
-    }
-}
-
 // Maven Repositories
 repositories {
     mavenLocal()
@@ -65,21 +41,30 @@ repositories {
     Repositories.mavenUrls.forEach(::maven)
 }
 
-fun Project.configurations() {
-    // Add `include` configuration for ShadowJar
-    configurations {
-        val include by creating
-        // don't include in maven pom
-        compileOnly.get().extendsFrom(include)
-        // but also work in tests
-        testImplementation.get().extendsFrom(include)
+// Project Dependencies
+dependencies {
+    with(Dependencies) {
+        kotlinModules.forEach {
+            implementation("org.jetbrains.kotlin", "kotlin-$it", KOTLIN)
+        }
 
-        // Makes all the configurations use the same Kotlin version.
-        all {
-            resolutionStrategy.eachDependency {
-                if (requested.group == "org.jetbrains.kotlin") {
-                    useVersion(Dependencies.KOTLIN)
-                }
+        listOf("asm", "asm-tree").forEach {
+            implementation("org.ow2.asm", it, ASM)
+        }
+        implementation("codes.som.anthony", "koffee", KOFFEE) {
+            exclude(group = "org.ow2.asm")
+        }
+
+        testImplementation("org.jetbrains.kotlin", "kotlin-test", KOTLIN)
+    }
+}
+
+configurations {
+    // Makes all the configurations use the same Kotlin version.
+    all {
+        resolutionStrategy.eachDependency {
+            if (requested.group == "org.jetbrains.kotlin") {
+                useVersion(Dependencies.KOTLIN)
             }
         }
     }
@@ -120,17 +105,6 @@ ktlint {
         "no-wildcard-imports",
         "filename"
     )
-}
-
-blossom {
-    mapOf(
-        "project.name" to Coordinates.NAME,
-        "project.version" to Coordinates.VERSION,
-        "project.desc" to Coordinates.DESC,
-        "project.rev" to buildRevision,
-    ).mapKeys { "@${it.key}@" }.forEach { (key, value) ->
-        replaceToken(key, value)
-    }
 }
 
 tasks {
@@ -287,25 +261,6 @@ tasks {
         from("LICENSE")
     }
 
-    // Configure ShadowJar
-    shadowJar {
-        val include by project.configurations
-
-        this.configurations.clear()
-        this.configurations += include
-
-        // Add the API source set to the ShadowJar
-        additionalSourceSets.forEach {
-            from(sourceSets[it].output)
-        }
-        from("LICENSE")
-
-        this.archiveClassifier.set(ShadowJar.classifier)
-        this.manifest.inheritFrom(jar.get().manifest)
-
-        ShadowJar.packageRemappings.forEach(this::relocate)
-    }
-
     afterEvaluate {
         // Task priority
         val publishToSonatype by getting
@@ -340,7 +295,6 @@ val defaultArtifactTasks = arrayOf(
 // Declare the artifacts
 artifacts {
     defaultArtifactTasks.forEach(::archives)
-    archives(tasks.shadowJar)
 }
 
 publishing.publications {

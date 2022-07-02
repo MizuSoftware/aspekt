@@ -1,13 +1,13 @@
 object Coordinates {
-    const val NAME = "kotlin-template"
-    const val DESC = "Project description."
-    const val VENDOR = "Stardust Enterprises"
+    const val NAME = "aspekt"
+    const val DESC = "Aspect-oriented Kotlin bytecode modification framework."
+    const val VENDOR = "Mizu Software"
 
     const val GIT_HOST = "github.com"
-    const val REPO_ID = "stardust-enterprises/$NAME"
+    const val REPO_ID = "mizusoftware/$NAME"
 
-    const val GROUP = "fr.stardustenterprises"
-    const val VERSION = "0.0.1"
+    const val GROUP = "wtf.mizu"
+    const val VERSION = "0.1.0"
 }
 
 object Pom {
@@ -15,7 +15,8 @@ object Pom {
         License("ISC License", "https://opensource.org/licenses/ISC")
     )
     val developers = arrayOf(
-        Developer("dev1")
+        Developer("xtrm", "xtrm <oss@xtrm.me>"),
+        Developer("milse113", "milse <email@cock.li>")
     )
 }
 

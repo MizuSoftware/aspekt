@@ -1,12 +1,10 @@
-# kotlin-template [![Build][badge-github-ci]][project-gradle-ci] [![Maven Central][badge-mvnc]][project-mvnc]
+# aspekt [![Build][badge-github-ci]][project-gradle-ci] [![Maven Central][badge-mvnc]][project-mvnc]
 
-template for all our [Kotlin][kotlin] projects.
+aspect-oriented [kotlin][kotlin] bytecode modification framework for the [JVM][jvm].
 
 # importing
 
-you can import [kotlin-template][project-url] from [maven central][mvnc] just by adding it to your dependencies:
-
-**Note:** this isn't actually a library you can import
+you can import [aspekt][project-url] from [maven central][mvnc] just by adding it to your dependencies:
 
 ## gradle
 
@@ -16,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation("fr.stardustenterprises:kotlin-template:{VERSION}")
+    implementation("wtf.mizu:aspekt:0.1.0")
 }
 ```
 
@@ -24,9 +22,9 @@ dependencies {
 
 ```xml
 <dependency>
-    <groupId>fr.stardustenterprises</groupId>
-    <artifactId>kotlin-template</artifactId>
-    <version>{VERSION}</version>
+    <groupId>wtf.mizu</groupId>
+    <artifactId>aspekt</artifactId>
+    <version>0.1.0</version>
 </dependency>
 ```
 
@@ -58,22 +56,22 @@ this project is under the [ISC license][project-license].
 
 <!-- Project Links -->
 
-[project-url]: https://github.com/stardust-enterprises/kotlin-template "project github repository"
+[project-url]: https://github.com/stardust-enterprises/aspekt "project github repository"
 
-[fork]: https://github.com/stardust-enterprises/kotlin-template/fork "fork this repository"
+[fork]: https://github.com/stardust-enterprises/aspekt/fork "fork this repository"
 
-[new-pr]: https://github.com/stardust-enterprises/kotlin-template/pulls/new "create a new pull request"
+[new-pr]: https://github.com/stardust-enterprises/aspekt/pulls/new "create a new pull request"
 
-[new-issue]: https://github.com/stardust-enterprises/kotlin-template/issues/new "create a new issue"
+[new-issue]: https://github.com/stardust-enterprises/aspekt/issues/new "create a new issue"
 
-[project-mvnc]: https://maven-badges.herokuapp.com/maven-central/fr.stardustenterprises/kotlin-template "maven central repository"
+[project-mvnc]: https://maven-badges.herokuapp.com/maven-central/wtf.mizu/aspekt "maven central repository"
 
-[project-gradle-ci]: https://github.com/stardust-enterprises/kotlin-template/actions/workflows/gradle-ci.yml "gradle ci workflow"
+[project-gradle-ci]: https://github.com/stardust-enterprises/aspekt/actions/workflows/gradle-ci.yml "gradle ci workflow"
 
-[project-license]: https://github.com/stardust-enterprises/kotlin-template/blob/trunk/LICENSE "LICENSE source file"
+[project-license]: https://github.com/stardust-enterprises/aspekt/blob/main/LICENSE "LICENSE source file"
 
 <!-- Badges -->
 
-[badge-mvnc]: https://maven-badges.herokuapp.com/maven-central/fr.stardustenterprises/kotlin-template/badge.svg "maven central badge"
+[badge-mvnc]: https://maven-badges.herokuapp.com/maven-central/wtf.mizu/aspekt/badge.svg "maven central badge"
 
-[badge-github-ci]: https://github.com/stardust-enterprises/kotlin-template/actions/workflows/build.yml/badge.svg?branch=trunk "github actions badge"
+[badge-github-ci]: https://github.com/stardust-enterprises/aspekt/actions/workflows/build.yml/badge.svg?branch=main "github actions badge"
