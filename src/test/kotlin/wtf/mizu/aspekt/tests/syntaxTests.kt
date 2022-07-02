@@ -21,6 +21,5 @@ internal class SyntaxTests {
         }
 
         aspect injectAt callSite
-
     }
 }
