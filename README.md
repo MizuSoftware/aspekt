@@ -66,7 +66,7 @@ this project is under the [ISC license][project-license].
 
 [project-mvnc]: https://maven-badges.herokuapp.com/maven-central/wtf.mizu/aspekt "maven central repository"
 
-[project-gradle-ci]: https://github.com/MizuSoftware/aspekt/actions/workflows/gradle-ci.yml "gradle ci workflow"
+[project-gradle-ci]: https://github.com/MizuSoftware/aspekt/actions/workflows/build.yml "gradle ci workflow"
 
 [project-license]: https://github.com/MizuSoftware/aspekt/blob/main/LICENSE "LICENSE source file"
 
