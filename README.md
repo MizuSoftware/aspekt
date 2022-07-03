@@ -56,22 +56,22 @@ this project is under the [ISC license][project-license].
 
 <!-- Project Links -->
 
-[project-url]: https://github.com/stardust-enterprises/aspekt "project github repository"
+[project-url]: https://github.com/MizuSoftware/aspekt "project github repository"
 
-[fork]: https://github.com/stardust-enterprises/aspekt/fork "fork this repository"
+[fork]: https://github.com/MizuSoftware/aspekt/fork "fork this repository"
 
-[new-pr]: https://github.com/stardust-enterprises/aspekt/pulls/new "create a new pull request"
+[new-pr]: https://github.com/MizuSoftware/aspekt/pulls/new "create a new pull request"
 
-[new-issue]: https://github.com/stardust-enterprises/aspekt/issues/new "create a new issue"
+[new-issue]: https://github.com/MizuSoftware/aspekt/issues/new "create a new issue"
 
 [project-mvnc]: https://maven-badges.herokuapp.com/maven-central/wtf.mizu/aspekt "maven central repository"
 
-[project-gradle-ci]: https://github.com/stardust-enterprises/aspekt/actions/workflows/gradle-ci.yml "gradle ci workflow"
+[project-gradle-ci]: https://github.com/MizuSoftware/aspekt/actions/workflows/gradle-ci.yml "gradle ci workflow"
 
-[project-license]: https://github.com/stardust-enterprises/aspekt/blob/main/LICENSE "LICENSE source file"
+[project-license]: https://github.com/MizuSoftware/aspekt/blob/main/LICENSE "LICENSE source file"
 
 <!-- Badges -->
 
 [badge-mvnc]: https://maven-badges.herokuapp.com/maven-central/wtf.mizu/aspekt/badge.svg "maven central badge"
 
-[badge-github-ci]: https://github.com/stardust-enterprises/aspekt/actions/workflows/build.yml/badge.svg?branch=main "github actions badge"
+[badge-github-ci]: https://github.com/MizuSoftware/aspekt/actions/workflows/build.yml/badge.svg?branch=main "github actions badge"
