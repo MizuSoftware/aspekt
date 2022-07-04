@@ -1,14 +1,15 @@
-# aspekt [![Build][badge-github-ci]][project-gradle-ci] [![Maven Central][badge-mvnc]][project-mvnc]
+# ✏️ Aspekt [![Build][badge-github-ci]][project-gradle-ci] [![Maven Central][badge-mvnc]][project-mvnc]
 
-aspect-oriented [kotlin][kotlin] bytecode modification framework for the [JVM][jvm].
+A fluent [open-source][project-url] [Kotlin] aspect-oriented [Java][jvm] bytecode modification framework.
 
-# importing
 
-you can import [aspekt][project-url] from [maven central][mvnc] just by adding it to your dependencies:
+## Importing
 
-## gradle
+You can import [aspekt][project-url] from [Maven Central][mvnc] by adding it to your dependencies block.
 
-```kotlin
+### Gradle
+
+```kt
 repositories {
     mavenCentral()
 }
@@ -18,7 +19,7 @@ dependencies {
 }
 ```
 
-## maven
+### Maven
 
 ```xml
 <dependency>
@@ -28,50 +29,57 @@ dependencies {
 </dependency>
 ```
 
-# troubleshooting
 
-if you ever encounter any problem **related to this project**, you can [open an issue][new-issue] describing what the
-problem is. please, be as precise as you can, so that we can help you asap. we are most likely to close the issue if it
-is not related to our work.
+## Troubleshooting
 
-# contributing
+If you encounter any kind of problem **related to this library**, you can [open an issue][new-issue] describing what's
+up. We ask you to be as precise as you can, so that our developers can help you as fast as possible.
 
-you can contribute by [forking the repository][fork], making your changes and [creating a new pull request][new-pr]
-describing what you changed, why and how.
+Non-project-related issues will most likely be closed without further ado.
 
-# licensing
 
-this project is under the [ISC license][project-license].
+## Contributing
+
+You can contribute to this project by [forking it][fork], making your changes, and
+[creating a new pull request][new-pr].
+
+You have to be as precise as possible while doing it though, describing in the commits (or PR description) what you're
+changing, why and how.
+
+
+## Licensing
+
+This project is licensed under [the ISC license][project-license].
 
 
 <!-- Links -->
 
-[jvm]: https://adoptium.net "adoptium website"
+[jvm]: https://adoptium.net "Adoptium website"
 
-[kotlin]: https://kotlinlang.org "kotlin website"
+[kotlin]: https://kotlinlang.org "Kotlin website"
 
-[rust]: https://rust-lang.org "rust website"
+[mvnc]: https://repo1.maven.org/maven2/ "Maven Central website"
 
-[mvnc]: https://repo1.maven.org/maven2/ "maven central website"
 
 <!-- Project Links -->
 
-[project-url]: https://github.com/MizuSoftware/aspekt "project github repository"
+[project-url]: https://github.com/MizuSoftware/aspekt "Project homepage"
 
-[fork]: https://github.com/MizuSoftware/aspekt/fork "fork this repository"
+[fork]: https://github.com/MizuSoftware/aspekt/fork "Fork this repository"
 
-[new-pr]: https://github.com/MizuSoftware/aspekt/pulls/new "create a new pull request"
+[new-pr]: https://github.com/MizuSoftware/aspekt/pulls/new "Create a new pull request"
 
-[new-issue]: https://github.com/MizuSoftware/aspekt/issues/new "create a new issue"
+[new-issue]: https://github.com/MizuSoftware/aspekt/issues/new "Create a new issue"
 
-[project-mvnc]: https://maven-badges.herokuapp.com/maven-central/wtf.mizu/aspekt "maven central repository"
+[project-mvnc]: https://search.maven.org/search?g:wtf.mizu+AND+a:aspekt "Project Maven Central search"
 
-[project-gradle-ci]: https://github.com/MizuSoftware/aspekt/actions/workflows/build.yml "gradle ci workflow"
+[project-gradle-ci]: https://github.com/MizuSoftware/aspekt/actions/workflows/build.yml "Continuous integration"
 
 [project-license]: https://github.com/MizuSoftware/aspekt/blob/main/LICENSE "LICENSE source file"
 
+
 <!-- Badges -->
 
-[badge-mvnc]: https://maven-badges.herokuapp.com/maven-central/wtf.mizu/aspekt/badge.svg "maven central badge"
+[badge-mvnc]: https://maven-badges.herokuapp.com/maven-central/wtf.mizu/aspekt/badge.svg "Maven Central badge"
 
-[badge-github-ci]: https://github.com/MizuSoftware/aspekt/actions/workflows/build.yml/badge.svg?branch=main "github actions badge"
+[badge-github-ci]: https://github.com/MizuSoftware/aspekt/actions/workflows/build.yml/badge.svg?branch=main "Continous integration badge"
