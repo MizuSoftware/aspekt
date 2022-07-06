@@ -1,0 +1,25 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:wtf.mizu.aspekt.callsite.opcode////PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite.opcode/index.html
+$dokka.location:wtf.mizu.aspekt.callsite.opcode/OpcodeBasedPoint///PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite.opcode/-opcode-based-point/index.html
+$dokka.location:wtf.mizu.aspekt.callsite.opcode/OpcodeBasedPoint/OpcodeBasedPoint/#wtf.mizu.aspekt.callsite.opcode.OpcodePattern/PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite.opcode/-opcode-based-point/-opcode-based-point.html
+$dokka.location:wtf.mizu.aspekt.callsite.opcode/OpcodeBasedPoint/applyAt/#wtf.mizu.aspekt.api.callsite.CallSite#wtf.mizu.aspekt.api.Aspect/PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite.opcode/-opcode-based-point/apply-at.html
+$dokka.location:wtf.mizu.aspekt.callsite.opcode/OpcodeBasedPoint/pattern/#/PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite.opcode/-opcode-based-point/pattern.html
+$dokka.location:wtf.mizu.aspekt.callsite.opcode/OpcodePattern///PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite.opcode/-opcode-pattern/index.html
+$dokka.location:wtf.mizu.aspekt.callsite.opcode/OpcodePattern/OpcodePattern/#/PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite.opcode/-opcode-pattern/-opcode-pattern.html
+$dokka.location:wtf.mizu.aspekt.callsite////PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite/index.html
+$dokka.location:wtf.mizu.aspekt.callsite/HeadPoint///PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite/-head-point/index.html
+$dokka.location:wtf.mizu.aspekt.callsite/HeadPoint/HeadPoint/#/PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite/-head-point/-head-point.html
+$dokka.location:wtf.mizu.aspekt.callsite/HeadPoint/applyAt/#wtf.mizu.aspekt.api.callsite.CallSite#wtf.mizu.aspekt.api.Aspect/PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite/-head-point/apply-at.html
+$dokka.location:wtf.mizu.aspekt.callsite/ReturnPoint///PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite/-return-point/index.html
+$dokka.location:wtf.mizu.aspekt.callsite/ReturnPoint/ReturnPoint/#/PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite/-return-point/-return-point.html
+$dokka.location:wtf.mizu.aspekt.callsite/TailPoint///PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite/-tail-point/index.html
+$dokka.location:wtf.mizu.aspekt.callsite/TailPoint/TailPoint/#/PointingToDeclaration/aspekt/wtf.mizu.aspekt.callsite/-tail-point/-tail-point.html
+$dokka.location:wtf.mizu.aspekt.dsl////PointingToDeclaration/aspekt/wtf.mizu.aspekt.dsl/index.html
+$dokka.location:wtf.mizu.aspekt.dsl//aspect/#kotlin.Function1[wtf.mizu.aspekt.api.AspectContext,kotlin.Unit]/PointingToDeclaration/aspekt/wtf.mizu.aspekt.dsl/aspect.html
+$dokka.location:wtf.mizu.aspekt.dsl//injectAt/wtf.mizu.aspekt.api.Aspect#wtf.mizu.aspekt.api.callsite.CallSite/PointingToDeclaration/aspekt/wtf.mizu.aspekt.dsl/inject-at.html
+$dokka.location:wtf.mizu.aspekt.dsl//site/#kotlin.Function1[wtf.mizu.aspekt.api.callsite.CallSiteBuilder,kotlin.Unit]/PointingToDeclaration/aspekt/wtf.mizu.aspekt.dsl/site.html
+wtf.mizu.aspekt.callsite
+wtf.mizu.aspekt.callsite.opcode
+wtf.mizu.aspekt.dsl
+
